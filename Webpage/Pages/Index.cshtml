@@ -1,10 +1,20 @@
 ﻿@page
 @model IndexModel
-@{
-    ViewData["Title"] = "Home page";
+
+@section Title {
+    Home - MyWebsite
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+@section MetaTags {
+    <meta name="description" content="Welcome to MyWebsite, explore our services and products.">
+}
+
+<div class="hero">
+    <h1>Welcome to MyWebsite</h1>
+    <p>Explore our wide range of services and products designed to meet your needs.</p>
+    <a class="btn" href="/services">Our Services</a>
 </div>
+
+
+
+
